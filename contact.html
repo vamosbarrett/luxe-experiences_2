@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Luxe Experiences</title>
+  <meta name="description" content="Begin your Luxe Experiences journey. Book a consultation or get in touch with our team.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header class="navbar" id="navbar">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo" aria-label="Luxe Experiences Home">
+        <img src="images/LUXELOGO1.png" alt="Luxe Experiences logo" class="navbar__logo-image" loading="eager">
+        <span class="navbar__logo-text">LUXE <span>EXPERIENCES</span></span>
+      </a>
+      <nav class="navbar__nav" id="navMenu">
+        <a href="index.html" class="navbar__link">Home</a>
+        <a href="about.html" class="navbar__link">About</a>
+        <a href="portfolio.html" class="navbar__link">Portfolio</a>
+        <a href="team.html" class="navbar__link">Team</a>
+        <a href="index.html#testimonials" class="navbar__link">Testimonials</a>
+        <a href="contact.html" class="navbar__link is-active">Contact</a>
+      </nav>
+      <button class="navbar__toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <video class="page-hero__video" autoplay muted loop playsinline poster="images/BG.png">
+      <source src="videos/contact-hero-loop.mp4" type="video/mp4">
+    </video>
+    <div class="page-hero__overlay"></div>
+    <div class="page-hero__inner">
+      <span class="section__eyebrow">Contact</span>
+      <h1 class="page-hero__title">Let's Begin Your Story</h1>
+      <p class="page-hero__text">Tell us a little about your vision, and we'll take it from there.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact">
+    <div class="contact__inner">
+
+      <!-- Consultation CTA -->
+      <div class="contact__form-wrap">
+        <span class="section__eyebrow">Book a Consultation</span>
+        <h2 class="section__title">Let's Plan Something Beautiful</h2>
+        <p class="contact__text contact__lead">
+          Share a few details about your event and vision through our consultation form.
+          Our team will review your submission and reach out within 24 hours to begin
+          planning your experience.
+        </p>
+        <a
+          href="https://forms.gle/at1ZU5YXj3wfWJb46"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn--primary contact__cta"
+        >
+          Book a Consultation
+        </a>
+      </div>
+
+      <!-- Details -->
+      <div class="contact__details">
+        <div class="contact__block">
+          <span class="section__eyebrow">Instagram</span>
+          <p class="contact__text">
+            <a href="https://www.instagram.com/luxe_experiences_/" class="contact__link contact__social-link" target="_blank" rel="noopener noreferrer">
+              <svg class="contact__social-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9a5.5 5.5 0 0 1-5.5 5.5h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2Zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9a3.5 3.5 0 0 0 3.5-3.5v-9A3.5 3.5 0 0 0 16.5 4h-9ZM12 6.8A5.2 5.2 0 1 1 6.8 12 5.2 5.2 0 0 1 12 6.8Zm0 2A3.2 3.2 0 1 0 15.2 12 3.2 3.2 0 0 0 12 8.8Zm5.45-2.1a1.05 1.05 0 1 1-1.05 1.05 1.05 1.05 0 0 1 1.05-1.05Z"/>
+              </svg>
+              <span>@luxe_experiences_</span>
+            </a>
+          </p>
+        </div>
+
+        <div class="contact__block">
+          <span class="section__eyebrow">Get In Touch</span>
+          <p class="contact__text">
+            <a href="mailto:luxeexperiencess@gmail.com" class="contact__link">luxeexperiencess@gmail.com</a><br>
+            <a href="tel:+233500002010" class="contact__link">+233 50 000 2010</a>
+          </p>
+        </div>
+
+        <div class="contact__block">
+          <span class="section__eyebrow">Office Hours</span>
+          <p class="contact__text">Monday – Friday: 9am – 6pm<br>Saturday: By appointment</p>
+        </div>
+
+
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <p class="site-footer__text">© 2026 Luxe Experiences. All rights reserved. Crafted with elegance and precision.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

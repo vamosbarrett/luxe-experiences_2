@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Luxe Experiences</title>
+  <meta name="description" content="A curated gallery of events designed and executed by Luxe Experiences.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header class="navbar" id="navbar">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo" aria-label="Luxe Experiences Home">
+        <img src="images/LUXELOGO1.png" alt="Luxe Experiences logo" class="navbar__logo-image" loading="eager">
+        <span class="navbar__logo-text">LUXE <span>EXPERIENCES</span></span>
+      </a>
+      <nav class="navbar__nav" id="navMenu">
+        <a href="index.html" class="navbar__link">Home</a>
+        <a href="about.html" class="navbar__link">About</a>
+        <a href="portfolio.html" class="navbar__link is-active">Portfolio</a>
+        <a href="team.html" class="navbar__link">Team</a>
+        <a href="index.html#testimonials" class="navbar__link">Testimonials</a>
+        <a href="contact.html" class="navbar__link">Contact</a>
+      </nav>
+      <button class="navbar__toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <video class="page-hero__video" autoplay muted loop playsinline poster="images/portfolio-hero-poster.jpg">
+      <source src="videos/AQNEGGdZpr9gFVbyHVTAE80rdWXSyh-xYVKdMfrolJ9KWftTda1M6Nf7K3QhbwQnxPFOL6_h458Ga-J5Vr2Q398D..mp4" type="video/mp4">
+    </video>
+    <div class="page-hero__overlay"></div>
+    <div class="page-hero__inner">
+      <span class="section__eyebrow">Portfolio</span>
+      <h1 class="page-hero__title">Moments We've Curated</h1>
+      <p class="page-hero__text">Every project tells a story of intention — explore the details behind each experience.</p>
+    </div>
+  </section>
+
+  <!-- FILTER BAR -->
+  <section class="filter-bar">
+    <div class="filter-bar__inner">
+      <button class="filter-btn is-active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="corporate">Memorials</button>
+      <button class="filter-btn" data-filter="social">Intimate &amp; Social</button>
+      <button class="filter-btn" data-filter="dining">Curated Dining &amp; Tablescapes</button>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery">
+    <div class="gallery__grid" id="galleryGrid">
+
+      <article class="gallery__item" data-category="corporate">
+        <a href="#proj-brand-launch" class="gallery__link">
+          <img src="images/631834378_18079680194361739_8545793871709400181_n..jpg" alt="Corporate brand launch event" loading="lazy">
+          <div class="gallery__caption">
+            <span class="featured__category"></span>
+            <h3 class="featured__title">Private Celebrations</h3>
+          </div>
+        </a>
+      </article>
+
+      <article class="gallery__item" data-category="social">
+        <a href="#proj-christening" class="gallery__link">
+          <img src="images/601771644_18074351489361739_4775500909768048936_n..jpg" alt="Intimate christening celebration" loading="lazy">
+          <div class="gallery__caption">
+            <span class="featured__category"></span>
+            <h3 class="featured__title">Corporate Events</h3>
+          </div>
+        </a>
+      </article>
+
+      <article class="gallery__item" data-category="dining">
+        <a href="#proj-tablescape" class="gallery__link">
+          <img src="images/487748978_18048355604361739_3412511635334838061_n.jpg" alt="Luxury curated tablescape" loading="lazy">
+          <div class="gallery__caption">
+            <span class="featured__category"></span>
+            <h3 class="featured__title">Luxury Weddings</h3>
+          </div>
+        </a>
+      </article>
+
+      <article class="gallery__item" data-category="social">
+        <a href="#proj-wedding" class="gallery__link">
+          <img src="images/643541958_18081311369361739_3298366679227445296_n.jpg" alt="Luxury wedding celebration" loading="lazy">
+          <div class="gallery__caption">
+            <span class="featured__category"></span>
+            <h3 class="featured__title">Religious Events</h3>
+          </div>
+        </a>
+      </article>
+
+      <article class="gallery__item" data-category="corporate">
+        <a href="#proj-gala" class="gallery__link">
+          <img src="images/669676973_18085596002361739_5161871112826770892_n..jpg" alt="Corporate gala dinner" loading="lazy">
+          <div class="gallery__caption">
+            <span class="featured__category"></span>
+            <h3 class="featured__title">Funerals & Memorials</h3>
+          </div>
+        </a>
+      </article>
+
+      <article class="gallery__item" data-category="social">
+        <a href="#proj-dinner" class="gallery__link">
+          <img src="images/485130272_18046887236361739_3692014596220227913_n..jpg" alt="Private dinner table styling" loading="lazy">
+          <div class="gallery__caption">
+            <span class="featured__category"></span>
+            <h3 class="featured__title">Celebration</h3>
+          </div>
+        </a>
+      </article>
+
+    </div>
+
+    <p class="gallery__empty" id="galleryEmpty">No projects found in this category yet.</p>
+  </section>
+
+  <!-- PROJECT DETAIL (example narrative section) -->
+  <section class="project-detail" id="proj-brand-launch">
+    <div class="project-detail__inner">
+      <span class="section__eyebrow">Corporate &amp; Brand Launches</span>
+      <h2 class="section__title">An Evening of Distinction</h2>
+      <div class="project-detail__grid">
+        <img src="images/621854697_18077921681361739_1948372372086231137_n..jpg" alt="Corporate brand launch event detail" loading="lazy" class="project-detail__image">
+        <div class="project-detail__content">
+          <h3 class="project-detail__heading">The Brief</h3>
+          <p class="project-detail__text">Our client needed a brand launch that felt as premium as the product itself, sophisticated, memorable, and effortlessly elegant.</p>
+          <h3 class="project-detail__heading">The Design Choices</h3>
+          <p class="project-detail__text">We grounded the palette in deep charcoal and gold to mirror the brand's identity, using low, warm lighting and minimalist florals to keep focus on the product reveal. Seating was arranged to encourage conversation, not performance.</p>
+          <h3 class="project-detail__heading">The Intentionality</h3>
+          <p class="project-detail__text">Every element, from the pacing of the program to the placement of signage, was designed to feel unhurried, allowing guests to experience the brand rather than simply observe it.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <p class="site-footer__text">© 2026 Luxe Experiences. All rights reserved. Crafted with elegance and precision.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
